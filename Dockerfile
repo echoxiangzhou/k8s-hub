@@ -50,7 +50,7 @@ RUN PYCURL_SSL_LIBRARY=openssl pip3 install --no-cache-dir \
             echo jupyterhub==${JUPYTERHUB_VERSION}; \
           fi')
 
-RUN PYCURL_SSL_LIBRARY=openssl pip3 install --no-cache-dir git+https://github.com/echoxiangzhou/nativeauthenticator.git
+RUN pip3 install --no-cache-dir git+https://github.com/echoxiangzhou/nativeauthenticator.git
 
 WORKDIR /srv/jupyterhub
 
